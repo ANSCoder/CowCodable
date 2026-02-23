@@ -1,0 +1,15 @@
+--indent 4
+--allman false
+--commas inline
+--linebreaks lf
+--trimwhitespace always
+--insertlines enabled
+--self remove
+--ifdef no-indent
+--wraparguments before-first
+--wrapcollections before-first
+--wrapparameters before-first
+--closingparen balanced
+--ranges no-space
+--stripunusedargs closure-only
+--disable redundantFileprivate

@@ -171,6 +171,21 @@ struct Profile: Codable {
 - No hidden mutation of invalid backend data
 - No magic auto-fixes outside documented conversion rules
 
+## Quality Gates
+
+The repository uses deterministic validation for both SDK and demo app:
+
+1. `swift build`
+2. `swift test`
+3. `xcodebuild -project DemoApp/CowCodableDemoApp/CowCodableDemoApp.xcodeproj -scheme CowCodableDemoApp -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build`
+
+These checks run in CI at `.github/workflows/ci.yml`.
+
+## Formatting
+
+- Root editor policy: `/Users/anandnimje/Documents/CowCodable/.editorconfig`
+- SwiftFormat policy: `/Users/anandnimje/Documents/CowCodable/.swiftformat`
+
 ## License
 
 CowCodable is released under the MIT License.
