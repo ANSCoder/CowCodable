@@ -132,7 +132,7 @@ Add CowCodable to your dependencies:
 dependencies: [
     .package(url: "https://github.com/ANSCoder/CowCodable.git", from: "1.0.0")
 ]
-
+```
 
 ## Demo App
 
