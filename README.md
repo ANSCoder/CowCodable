@@ -167,20 +167,27 @@ The app imports `CowCodable` as a local Swift package dependency from this repos
 
 Switching the segmented control changes only the configured rescue policy; input JSON stays unchanged so behavior differences are observable.
 
-## Screenshots
+## 📱 Demo App Preview
 
 ### Main View
-![Main Demo](docs/screenshots/demo-main.png)
+<p align="center">
+  <img src="docs/screenshots/demo-main.png" width="320">
+</p>
 
 ### Strict Mode
-![Strict Mode](docs/screenshots/demo-strict.png)
+<p align="center">
+  <img src="docs/screenshots/demo-strict.png" width="320">
+</p>
 
 ### Permissive Mode
-![Permissive Mode](docs/screenshots/demo-permissive.png)
+<p align="center">
+  <img src="docs/screenshots/demo-permissive.png" width="320">
+</p>
 
 ### Overflow Case
-![Overflow](docs/screenshots/demo-overflow.png)
-
+<p align="center">
+  <img src="docs/screenshots/demo-overflow.png" width="320">
+</p>
 ## Example Model
 
 ```swift
