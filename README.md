@@ -1,4 +1,8 @@
 # CowCodable
+![Swift](https://img.shields.io/badge/Swift-5.9+-orange)
+![Platforms](https://img.shields.io/badge/iOS-16%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Release](https://img.shields.io/github/v/release/ANSCoder/CowCodable)
 
 CowCodable provides deterministic, production-safe JSON resilience for Swift models using a single wrapper:
 
