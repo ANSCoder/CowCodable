@@ -102,6 +102,38 @@ CowCodable/
     └── CowCodableDemoApp/
 ```
 
+
+## Requirements
+
+- Swift 5.9+
+- iOS 16.0+
+- macOS 13.0+
+- Xcode 15+
+
+CowCodable uses modern Swift concurrency and type-safe rescue strategies.
+
+## Installation
+
+### Swift Package Manager
+
+#### Using Xcode
+
+1. Open your project in Xcode.
+2. Go to **File → Add Package Dependencies…**
+3. Enter the repository URL: https://github.com/ANSCoder/CowCodable.git
+4. Select the latest version.
+5. Add the **CowCodable** library to your target.
+
+#### Using `Package.swift`
+
+Add CowCodable to your dependencies:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/ANSCoder/CowCodable.git", from: "1.0.0")
+]
+
+
 ## Demo App
 
 The repository includes a separate iOS SwiftUI demo app target:
@@ -135,12 +167,19 @@ The app imports `CowCodable` as a local Swift package dependency from this repos
 
 Switching the segmented control changes only the configured rescue policy; input JSON stays unchanged so behavior differences are observable.
 
-### Screenshot Placeholders
+## Screenshots
 
-- `docs/screenshots/demo-main.png` (full app view)
-- `docs/screenshots/demo-strict.png` (strict mode example)
-- `docs/screenshots/demo-permissive.png` (permissive mode example)
-- `docs/screenshots/demo-overflow.png` (overflow case with logs)
+### Main View
+![Main Demo](docs/screenshots/demo-main.png)
+
+### Strict Mode
+![Strict Mode](docs/screenshots/demo-strict.png)
+
+### Permissive Mode
+![Permissive Mode](docs/screenshots/demo-permissive.png)
+
+### Overflow Case
+![Overflow](docs/screenshots/demo-overflow.png)
 
 ## Example Model
 
@@ -181,10 +220,14 @@ The repository uses deterministic validation for both SDK and demo app:
 
 These checks run in CI at `.github/workflows/ci.yml`.
 
-## Formatting
+## Code Style
 
-- Root editor policy: `/Users/anandnimje/Documents/CowCodable/.editorconfig`
-- SwiftFormat policy: `/Users/anandnimje/Documents/CowCodable/.swiftformat`
+This project enforces consistent formatting via:
+
+- `.editorconfig` (editor-level policy)
+- `.swiftformat` (SwiftFormat configuration)
+
+Formatting is validated in CI.
 
 ## License
 
